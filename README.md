@@ -10,3 +10,5 @@ Aos poucos evoluindo e aprendendo cada vez mais !
 
 deploy: https://jheehsummer.github.io/projeto_previsao_do_tempo/
 
+<img src="https://github.com/Jheehsummer/projeto_previsao_do_tempo/blob/main/assets/previsao%20do%20tempo%20mobile.png?raw=true"> <img src="https://github.com/Jheehsummer/projeto_previsao_do_tempo/blob/main/assets/previsao%20do%20tempo%20pc.png?raw=true" width=700px height=450px>
+
