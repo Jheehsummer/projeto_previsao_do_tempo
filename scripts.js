@@ -4,8 +4,15 @@ function colocaNaTela (dados) {
     console.log(dados)
 
     if (dados.message === 'city not found') {
-        return document.querySelector(".cidade").innerHTML = "Cidade não encontrada!"
+        document.querySelector(".cidade").innerHTML = "Cidade não encontrada!"
+        document.querySelector(".graus-number").innerHTML = "--"
+        document.querySelector(".descricao").innerHTML = "--"
+        document.querySelector(".humidity").innerHTML = "--"
+        document.querySelector(".min").innerHTML = "--"
+        document.querySelector(".max").innerHTML = "--"
+        return
     }
+
 
     document.querySelector(".cidade").innerHTML = "Tempo em " + dados.name
     document.querySelector(".graus-number").innerHTML = Math.floor (dados.main.temp) + "°C"
@@ -17,7 +24,7 @@ function colocaNaTela (dados) {
 }
 
 async function buscarCidade(cidade) {
-    let dados = await fetch 
+    const dados = await fetch 
     ("https://api.openweathermap.org/data/2.5/weather?q=" + 
     cidade + 
     "&appid=" + 
@@ -35,5 +42,4 @@ async function buscarCidade(cidade) {
 function cliqueiNoBotao() {
     let cidade = document.querySelector (".input-cidade").value
     buscarCidade(cidade)
-   
-    }
+}
