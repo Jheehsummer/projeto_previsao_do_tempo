@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Previsão do tempo</title>
+</head>
+
+<body>
+
+    <img class="nuvens" src="/assets/nuvem.jpg">
+    <div class="container">
+
+        <input class="input-cidade" placeholder="Digite a cidade">
+
+        <button onclick="cliqueiNoBotao()">
+            <img class="lupa" src="https://www.svgrepo.com/show/487388/find.svg">
+        </button>
+
+        <div class="caixa-tempo">
+            <h2 class="cidade">Tempo em <b class="mudar-cidade">São Paulo</b></h2>
+
+            <p class="graus"><b class="graus-number">21°C</b></p>
+            <div class="caixa-menor">
+                <img class="nuvem-sol" src="https://openweathermap.org/img/wn/04n.png">
+                <p class="descricao"><b>Trovoada</b></p>
+            </div>
+            <p>Min: <b class="min">  15°</b> </p>
+            <p>Max: <b class="max">  25°</b> </p>
+            <p class="umidade">Umidade: <b class="humidity">70</b>%</p>
+        </div>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+
+</html>
