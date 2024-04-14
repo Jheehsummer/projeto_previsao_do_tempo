@@ -10,10 +10,10 @@ function colocaNaTela (dados) {
     document.querySelector(".cidade").innerHTML = "Tempo em " + dados.name
     document.querySelector(".graus-number").innerHTML = Math.floor (dados.main.temp) + "°C"
     document.querySelector(".descricao").innerHTML = dados.weather[0].description
-    document.querySelector(".humidity").innerHTML = dados.main.humidity
+    document.querySelector(".humidity").innerHTML = dados.main.humidity + "%"
     document.querySelector(".nuvem-sol").src = "https://openweathermap.org/img/wn/" + dados.weather[0].icon + ".png"
-    document.querySelector(".min").innerHTML = Math.floor (dados.main.temp_min) + "°"
-    document.querySelector(".max").innerHTML = Math.floor (dados.main.temp_max) + "°"
+    document.querySelector(".min").innerHTML = Math.floor (dados.main.temp_min) + "°C"
+    document.querySelector(".max").innerHTML = Math.floor (dados.main.temp_max) + "°C"
 }
 
 async function buscarCidade(cidade) {
